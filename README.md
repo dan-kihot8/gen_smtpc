@@ -11,7 +11,7 @@ Add `gen_smtpc` to your `rebar.config`:
 ```erlang
 %% Dependencies
 {deps, [
-   {gen_smtpc, "*", {git, "git://github.com/0xAX/gen_smtpc.git", "master"}}
+   {gen_smtpc, ".*", {git, "git://dan-kihot8/0xAX/gen_smtpc.git"}}
    ]
 }.
 ```
@@ -27,14 +27,10 @@ gen_smtpc:send({"usermail@gmail.com", "password"}, "user2@gmail.com", "Subject",
 Contribute
 --------------
 
-  * Fork [gen_smtpc](https://github.com/0xAX/gen_smtpc)
+  * Fork [gen_smtpc](https://github.com/OtpChatBot/gen_smtpc)
   * Make changes
   * Send pull request
 
-Author
---------------
-
-[@0xAX](https://twitter.com/0xAX)
 
 License
 --------------
