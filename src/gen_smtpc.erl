@@ -112,7 +112,7 @@ send_mail(From, FromPassword, To, Subject, Body, Ssl, Host, Port, State) ->
     % Connect to smtp server
     case Ssl:connect(Host, Port, Opts) of
         {ok, Socket} ->
-            Ssl:send(Socket, "HELO\r\n"),
+            Ssl:send(Socket, "HELO you\r\n"),
             Ssl:send(Socket, "AUTH LOGIN\r\n"),
             timer:sleep(2000),
             Ssl:send(Socket, binary_to_list(base64:encode(From)) ++ "\r\n"),
